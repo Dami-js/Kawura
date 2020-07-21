@@ -19,7 +19,7 @@
          <div class="col-md-1"></div>
          <div class="col-sm-6 col-md-6">
             <h2 class="form-head">SIGN IN TO KAWURA</h2>
-            <form class= "form" id="myForm" novalidate>
+            <form class="form" id="myForm" novalidate>
                <div class="input-icons">
                   <i class="far fa-envelope icon"></i>
                   <input type="email" class="form-control sign-input " placeholder="Email Address" name="email" required>
@@ -62,33 +62,41 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
     <script>
      const kawuraForm = document.getElementById('myForm');
-   kawuraForm.addEventListener('submit', function(e) {
-   e.preventDefault();
+      kawuraForm.addEventListener('submit', function(e) {
+      e.preventDefault();
 
-   const isValidElement = element => {
-      return element.name && element.value;
-   };
+      const isValidElement = element => {
+         return element.name && element.value;
+      };
 
-   const formToJSON = elements => [].reduce.call(elements, (data, element) => {
-      if (isValidElement(element)) {
-      data[element.name] = element.value;
-   }
-   return data;
-   }, {});
-   const formData = formToJSON(form.elements);
-   console.log(JSON.stringify(formData));
+      const formToJSON = elements => [].reduce.call(elements, (data, element) => {
+         if (isValidElement(element)) {
+         data[element.name] = element.value;
+      }
+      return data;
+      }, {});
 
-   const url ='https://kawuraweb.herokuapp.com/signin';
-   return fetch(url,{
-      method: 'POST',
-      body: formData,
-   }).then(function(response){
-      return response.JSON();
-   }).catch(function(error){
-      console.log("error");
-   })
+      const form = document.getElementsByClassName('form')[0];
+
+      const formdata = formToJSON(form.elements);
+      const formData = JSON.stringify(formdata);
+      console.log(formData);
+
+      const url ='https://kawuraweb.herokuapp.com/signin';
+      fetch(url,{
+         method: 'post',
+         body: formData
+      }).then(function(response){
+         return response.text();
+      }).then(function(text){
+         console.log(text);
+      }).catch(function(error){
+         console.log("error");
+      })
+      
+   });
+
   
-});
     </script>
     <script src="./Assets/script/custom.js"></script>
 </body>
