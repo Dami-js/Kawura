@@ -163,18 +163,13 @@ body{
    font-size: 15px;
    line-height: 22px;
 }
-.round-cont {
-   width:200px;
-   height:200px;
-   margin:70px auto;
- }
 
 
 .section-one{
-   height: auto; 
-   padding-top: 5em;
-   padding-bottom:5em;
-   padding-left: 5.7em;
+   height:650px; 
+   padding-top:3.5em;
+   padding-bottom:3.5em;
+   padding-left: 4em;
    padding-right: 4em;
    background-color: #113BEA;
 }
@@ -190,42 +185,44 @@ body{
 }
 
 .section-content{
-   width:80%;
+   width:100%;
    height:320px;
    margin:20px auto !important;
 }
 
-.box-text{
-   font-family: Gilroy-Medium;
-   font-size: 14px;
-   line-height: 22px;
-   text-align: center;
+.img-content{
+   width: 100px;
+   height:100px;
+   border-radius:15px;
+   margin-top: 15px;
+   background-color: #ffffff;
 }
 
-.stage-text{
+.img-position{
+   margin-top: 25px;
+   margin-left:25px;
+}
+
+.section1-content-header{
+   font-family: Gilroy-Bold;
+   font-size: 18px;
+   line-height: 24px;
    color: #FFFFFF;
+   padding-top:15px !important; 
+   padding-bottom: 15px !important;
+}
+
+.section1-content-subtext{
    font-family: Gilroy-Medium;
-   font-size: 12px;
-   line-height: 16px;
-   padding: 7px !important;
+   font-size: 16px;
+   line-height: 24px;
+   color: #FFFFFF;
 }
 
-.stage1{
-   background-color: #6CB81F;
+.Action-btn{
+   width:13%;
+   float: right !important;
 }
-.stage2{
-   background-color: #A4D375;
-}
-.stage3{
-   background-color: #EAC117;
-}
-.stage4{
-   background-color: #F0D258;
-}
-.stage5{
-   background-color: #EE5627;
-}
-
 .btn-create-now{
    background-color: #FFFFFF !important;
    margin:auto !important ;
@@ -255,8 +252,19 @@ body{
 .section-two{
    padding-top: 4em;
    padding-bottom:4em; 
+   padding-left: 4em;
+   padding-right:4em; 
    height: auto;
    background-color: #F7FAFF;
+}
+.section2-img-position{
+  width: 400px;
+  height:400px;
+  margin-top:130px;
+  background-image: url(../Images/image\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
 }
 .content-header{
    font-family: Gilroy-Bold;
@@ -269,7 +277,9 @@ body{
    margin-top: 30px;
 }
 .content1{
-   padding-bottom:10px;
+   padding-left: 30px;
+   padding-bottom: 10px;
+   border-left: 1px solid #113BEA;
 }
 .content-title{
    font-family: Gilroy-Bold;
@@ -282,6 +292,8 @@ body{
    font-size: 16px;
    line-height: 25px;
    color: #1E2B5E;
+   padding-top:10px ;
+   padding-bottom: 20px ;
 }
 .section-three{
    // padding: 40px 80px;  
@@ -308,10 +320,22 @@ body{
    padding-top: 50px;  
    padding-bottom: 100px;
 }
+.card-container{
+   position: relative;
+   height: 270px;
+}
 .card{
    width: 18rem !important; 
-   height: 300px !important;
-   background-color: #BFCDDA !important;
+   height: 150px !important;
+   background-color: #C4C4C4 !important;
+   border-radius: 0rem !important;
+   position: absolute;
+}
+.card-body{
+   background-color: #ffffff;
+   width:16rem;
+   position:absolute;
+   margin-top: -30px;
 }
 
 #line-three-img{
@@ -332,9 +356,8 @@ body{
    font-family: Gilroy-Medium;
    font-size: 15px !important;
    line-height: 22px;
-   color: rgba(30, 43, 94,0.7) !important;
    text-decoration: none !important;
-   float: right;
+  
 }
 .section-four{
    padding: 60px 70px;  
@@ -447,15 +470,6 @@ body{
      font-size: 27px;
      line-height: 32px;
      text-align: left;
-  }
-  .class-box{
-   margin: 10px auto;
-  }
-  .box-text{
-     font-size: 16px;
-  }
-  .stage-chart{
-     margin: 10px auto; 
   }
   .section-one{
      height: 750px;  
