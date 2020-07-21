@@ -16,39 +16,29 @@
          <div class="col-sm-6 col-md-5">
             <img src="./Assets/Images/kawura-logo.png" class="signup-logo" alt="kawura">
          </div>
-         <div class="col-md-1 vertical-line"></div>
+         <div class="col-md-1"></div>
          <div class="col-sm-6 col-md-6">
             <h2 class="form-head">SIGN UP ON KAWURA</h2>
-            <div v-if="!submitted">
-               <form action="post" class="form">
+               <form action="#" class="form"  novalidate>
                   <div class="input-icons">
                      <i class="far fa-user-circle icon"></i>
-                     <input type="text" class="form-control sign-input" placeholder="Full Name" v-model="name"
-                     v-bind:class="{'form-control':false, 'is-invalid' : !validName(name) && emailBlured}"
-                     v-on:blur="emailBlured = true">
+                     <input type="text" class="form-control sign-input" placeholder="Full Name" name="full-name" required >
                      <div class="invalid-feedback">Name is required</div>
                   </div>
                   <div class="input-icons">
                      <i class="far fa-envelope icon"></i>
-                     <input type="email"  class="form-control sign-input" placeholder="Email Address" v-model="email" 
-                     v-bind:class="{'form-control':true, 'is-invalid' : !validEmail(email) && emailBlured}"
-                     v-on:blur="emailBlured = true">
-                     <div class="invalid-feedback">A valid email is required</div>
+                     <input type="email" class="form-control sign-input" placeholder="Email Address" name="email" required>
+                     <div class="invalid-feedback">
+                        A valid email address is required.
+                      </div>
                   </div>
                   <div class="input-icons password">
                      <i class="fas fa-lock icon"></i>
-                     <input type="password" class="form-control sign-input" placeholder="Password" v-model="password"
-                     v-bind:class="{'form-control':true, 'is-invalid' : !validPassword(password) && emailBlured}"
-                     v-on:blur="emailBlured = true">
+                     <input type="password" class="form-control sign-input" placeholder="Password" name="password" required>
                      <div class="invalid-feedback">Password is required</div>
                   </div>
-                  <button type="submit" v-on:click.stop.prevent="submit"  class="btn btn-signup">Sign Up</button>
+                  <button type="submit" class="btn btn-signup">Sign Up</button>
                </form>
-            </div>
-            <!-- <div v-else="submitted" class="alert alert-success" role="alert">
-               <h5>Thank you</h5>
-               <p>Your Registration was a success!</p>
-            </div> -->
             <p class="text-center text-account">Already have an account? 
                <span><a href="sign-in.html" > Sign-in</a> </span></p>
             <div class="text-option ">
@@ -70,6 +60,5 @@
    </div>
 
     <!-- javascript base -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-   <script src="./Assets/script/customVue.js"></script>
+    <script src="./Assets/script/custom.js"></script>
 </body>

@@ -52,7 +52,10 @@ body {
 .custom-nav {
   width: 90%;
   margin: auto;
-  padding-top: 30px !important; }
+  padding-top: 30px !important;
+  padding-left: .65rem !important;
+  padding-right: .5rem !important;
+  padding-bottom: .5rem !important; }
 
 .logo-img {
   width: 124px;
@@ -84,17 +87,25 @@ body {
   line-height: 22px; }
 
 .header-img {
-  background-image: url(../Images/header_image\ _illustration.svg);
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 350px;
+  background-image: url(../Images/map2.png);
+  background-position: right;
+  background-repeat: no-repeat !important;
   background-size: contain; }
 
 .header-layout {
   width: 90%;
-  margin: 135px auto; }
+  margin: auto;
+  margin-top: 100px !important;
+  margin-bottom: 100px !important; }
 
 .row-space {
-  padding-left: 27px !important; }
+  height: 400px;
+  background-image: url(../Images/map1.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 25px !important; }
 
 .header-text {
   font-family: Gilroy-Bold;
@@ -138,83 +149,33 @@ body {
   height: 200px;
   margin: 70px auto; }
 
-.logo-box-header {
-  width: 100px !important;
-  height: 100px !important;
-  background-color: #f5f5f5;
-  border-radius: 15px;
-  margin: 110px auto; }
-
 .section-one {
   height: auto;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  padding-left: 5.7em;
+  padding-right: 4em;
   background-color: #113BEA; }
 
 .section-head {
-  width: 50%;
-  margin: auto; }
+  width: 40%; }
 
 .section-title {
   font-family: Gilroy-Bold;
   font-size: 38px;
   line-height: 51px;
   color: #FFFFFF;
-  text-align: center; }
-
-#line-img {
-  background-image: url(../Images/Vector.png);
-  background-position: right;
-  background-repeat: no-repeat; }
+  text-align: left; }
 
 .section-content {
   width: 80%;
   height: 320px;
   margin: 20px auto !important; }
 
-.class-box {
-  height: 60px !important;
-  padding: 10px !important;
-  background-color: #fff;
-  border-radius: 67px;
-  margin-left: 90px;
-  margin-top: 150px; }
-
 .box-text {
   font-family: Gilroy-Medium;
   font-size: 14px;
   line-height: 22px;
-  text-align: center; }
-
-.logo-box {
-  height: 160px !important;
-  padding: 44px 48px !important;
-  background-color: #fff;
-  border-radius: 15px;
-  margin-left: 150px;
-  margin-top: 100px; }
-
-.img-logo-box {
-  width: 100%;
-  height: 100%;
-  background-image: url(../Images/transparent-logo.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 1; }
-
-.stage-chart {
-  height: 300px !important;
-  background-color: #fff;
-  padding: 10px !important;
-  border-radius: 18.1px;
-  margin-left: 150px;
-  margin-top: 10px; }
-
-.bar {
-  width: 70%;
-  height: 40px;
-  border-radius: 5px;
-  margin: 15px auto !important;
   text-align: center; }
 
 .stage-text {
@@ -387,6 +348,18 @@ body {
 
   .nav-btn {
     display: inline; } }
+@media (min-width: 1025px) {
+  .navbar-toggler {
+    display: none; }
+
+  .nav-btn {
+    display: inline; }
+
+  .header {
+    height: 80%; }
+
+  .header-layout {
+    margin-top: 165px; } }
 @media (max-width: 575.98px) {
   .header {
     height: auto;
@@ -394,17 +367,14 @@ body {
 
   .header-layout {
     width: 90%;
-    margin: 0px; }
+    margin: 0px;
+    height: auto; }
 
   .row-space {
     padding: auto !important; }
 
   .header-btn {
     display: flex; }
-
-  .logo-box {
-    width: 95% !important;
-    margin: auto; }
 
   .btn-create, .btn-enroll {
     padding: 7px 7px !important; }
@@ -1243,7 +1213,8 @@ body {
   color: #1E2B5E; }
 
 .Prelaunch-btn {
-  display: flex; }
+  display: flex;
+  padding-left: 5px; }
 
 .prereg-email {
   width: 65% !important;
