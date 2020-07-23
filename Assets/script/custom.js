@@ -18,6 +18,29 @@
 
 
 
+// redirect to successful page or sign-in page
+function clickEnroll() {
+  if (email is  in db){
+   window.location.href="https://www.successful Registration/"; 
+  }else if{
+   window.location.href="https://www.sign-in/"; 
+  } else {
+   window.location.href="https://www.sign-up/"; 
+  }
+ }
+
+
+ if (registration successful){
+    console.log("show user page page. as added course")
+ }
+
+
+ // fetch data for course page from the database
+ 
+
+
+
+
 
 
 

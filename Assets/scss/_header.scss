@@ -152,7 +152,6 @@ body{
    font-size: 15px;
    line-height: 22px;
 }
-
 .btn-enroll{
    border: 1px solid #1E2B5E !important; 
    padding:16px 33px !important;  
@@ -324,14 +323,14 @@ body{
    position: relative;
    height: 270px;
 }
-.card{
+.empty{
    width: 18rem !important; 
    height: 150px !important;
    background-color: #C4C4C4 !important;
    border-radius: 0rem !important;
    position: absolute;
 }
-.card-body{
+.filled{
    background-color: #ffffff;
    width:16rem;
    position:absolute;

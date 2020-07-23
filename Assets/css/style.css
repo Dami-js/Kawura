@@ -290,14 +290,14 @@ body {
   position: relative;
   height: 270px; }
 
-.card {
+.empty {
   width: 18rem !important;
   height: 150px !important;
   background-color: #C4C4C4 !important;
   border-radius: 0rem !important;
   position: absolute; }
 
-.card-body {
+.filled {
   background-color: #ffffff;
   width: 16rem;
   position: absolute;
