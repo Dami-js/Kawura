@@ -149,3 +149,73 @@ body{
    font-size: 15px;
    line-height: 22px;
 }
+
+@media(max-width: 320px){
+   .card-section, .card-section2 {
+       width: 100%;
+   }
+   .card {
+      margin: 9px;
+   }
+}
+
+
+@media(max-width: 375px){
+   .card {
+      margin: 15px;
+   }
+   .course-header-layout {
+      margin: 50px auto;
+  }
+  .custom-nav-course {
+   width: 100%;
+  }
+   .course-logo {
+      width: 229px;
+      height: 57.25px;
+   }
+   .webinar-box {
+      margin-left: 0px;
+   }
+}
+@media (min-width:376px ) and (max-width :767px){
+   .card {
+      margin:35px;
+   }
+   .webinar-box{
+      margin-left: 70px;
+   }
+}
+@media(min-width: 768px){
+   .course  {
+      width: 10rem !important;
+   }
+   .card-top {
+      height: 200px;
+   }
+   .course-header-layout {
+      margin: 70px auto;
+  }
+  .custom-nav-course {
+    width: 100%;
+  }
+  .navbar{
+   padding: .1rem 0rem !important;
+  }
+}
+
+
+@media(min-width: 1024px){
+   .course  {
+      width: 14rem !important;
+   }
+   .card-top {
+      height: 200px;
+   }
+   .course-logo{
+      margin-left: 20px;
+   }
+   .course-header-layout {
+      margin: 130px auto;
+  }
+}
